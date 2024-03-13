@@ -18,7 +18,7 @@ const LoginForm = () => {
     console.log('Password:', password);
     
     try {
-      await fetch("http://localhost:8000/login", {
+      await fetch("https://fitness-tracker-1.onrender.com/login", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

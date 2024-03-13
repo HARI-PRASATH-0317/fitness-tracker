@@ -24,7 +24,7 @@ const SignUpForm = () => {
     console.log('Country:', country);
 
     try {
-      await axios.post('http://localhost:8000/signup', {
+      await axios.post('https://fitness-tracker-1.onrender.com/signup', {
         name,
         email,
         password,

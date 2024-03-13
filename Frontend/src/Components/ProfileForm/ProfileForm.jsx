@@ -20,7 +20,7 @@ function ProfileForm() {
     console.log('Location:', location);
     
     try {
-      const result = await axios.post('http://localhost:8000/ProfileForm', {
+      const result = await axios.post('https://fitness-tracker-1.onrender.com/ProfileForm', {
         weight,
         heightFeet,
         city,

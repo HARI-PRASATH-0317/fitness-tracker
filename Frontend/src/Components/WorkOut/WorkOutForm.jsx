@@ -32,7 +32,7 @@ function WorkOutForm() {
 
   const getWeight = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/Getweights", {
+      const response = await axios.get("https://fitness-tracker-1.onrender.com/Getweights", {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -99,7 +99,7 @@ function WorkOutForm() {
     }
 
 
-      await axios.post("http://localhost:8000/postActivities", convertedData, {
+      await axios.post("https://fitness-tracker-1.onrender.com/postActivities", convertedData, {
 				headers: {
 					"Content-Type": "application/json",
 				},

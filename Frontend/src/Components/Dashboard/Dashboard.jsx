@@ -46,7 +46,7 @@ function Dashboard() {
 		const getData = async () => {
 			await axios
 				.post(
-					"http://localhost:8000/getActivities",
+					"https://fitness-tracker-1.onrender.com/getActivities",
 					{
 						month: month,
 					},
