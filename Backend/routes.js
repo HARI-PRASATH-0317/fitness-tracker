@@ -34,10 +34,9 @@ router.post('/login', async (request, response) => {
     try {
         console.log(request.body);
         const login = await logup.findOne({ 
-            "email": request.body.email,
-            "password": request.body.password
+            "email": request.body.email
         });
-        if (login) {
+        if (login.password === request.body.password) {
             console.log('User logged in:', login);
             response.json({ message: 'Login successful' });
         } else {
